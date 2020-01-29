@@ -1,8 +1,9 @@
 .editPage
-  %p edit view TOP
-
-  .editPage__editForm
+  .editPage__title
+    投稿編集ページ
+  .editPage__form
     = form_for [@post_edit] do |f|
       = f.text_field :text, class: 'form', placeholder: '感想をお書きください'
-      %br
-      = f.submit '更新', class: 'editButton'
+      .editPage__form__submit
+        = f.submit '更新', class: 'submit'
+
