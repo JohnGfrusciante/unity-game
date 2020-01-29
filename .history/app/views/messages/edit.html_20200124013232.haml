@@ -1,0 +1,13 @@
+.editPage
+  %p edit view TOP
+
+  .editPage__editForm
+    = form_for [@post_edit] do |f|
+      = f.text_field :text, class: 'form', placeholder: '感想をお書きください'
+      %br
+      = f.submit '更新', class: 'editButton'
+
+
+
+  %p 
+    = link_to "TOPページ", root_path

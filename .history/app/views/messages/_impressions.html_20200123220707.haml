@@ -1,0 +1,16 @@
+- @messages.each do |message|
+  %li.messagePost
+    .messagePost__userName
+      = message.user.name
+    .messagePost__date
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+    .messagePost__message
+      = message.text
+    .messagePost__lower
+      .messagePost__lower__edit
+        = link_to "編集", 'https://www.google.com/', method: :get
+      - if @item.user_id == current_user.id
+        .messagePost__lower__delete
+          = link_to "削除", "/messages/#{message.id}", method: :delete
+      .messagePost__lower__like
+        いいね

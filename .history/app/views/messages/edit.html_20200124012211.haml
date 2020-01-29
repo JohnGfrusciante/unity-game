@@ -1,0 +1,6 @@
+.editPage
+  edit view TOP
+
+  = form_for [@post_edit] do |f|
+    = f.text_field :text, class: 'form', placeholder: '感想をお書きください'
+    = f.submit '更新', class: 'editButton'
