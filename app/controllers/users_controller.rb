@@ -3,4 +3,3 @@ class UsersController < ApplicationController
     @users = User.find(params[:id])
   end
 end
-

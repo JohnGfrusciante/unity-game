@@ -11,6 +11,9 @@ $(function(){
                   <div class="messagePost__message">
                   ${post.text}
                   </div>
+                  <div class="messagePost__likeCount">
+                  いいね件数 : 0
+                  </div>
                   <div class="messagePost__lower">
                   <div class="messagePost__lower__edit">
                   <a data-method="get" href="/messages/${post.message_id}/edit">編集</a>
