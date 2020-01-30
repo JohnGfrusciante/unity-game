@@ -67,6 +67,25 @@
       border: solid 2px #fff;
       width: 865px;
     }
+    &--icon {
+      img {
+        width: 150px;
+        border: none;
+        position: absolute;
+        top: 387px;
+        left: 392px;
+        animation: flash 1s linear infinite;
+      }
+      @keyframes flash {
+        0%,100% {
+          opacity: 1;
+        }
+      
+        50% {
+          opacity: 0.8;
+        }
+      }
+    }
   }
   &__impressions {
     float: right;
